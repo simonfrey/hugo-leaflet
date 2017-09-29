@@ -1,7 +1,12 @@
 # Hugo Leaflet
-OpenStreetMap Hugo Shortcodes 
 
-## Installation
+Shortcodes for inserting a OSM (Open Street Maps) Map into your posts. 
+
+_You can use as much Maps in a single post as you like! (You only have to load the script once)_
+
+## Installation/Loading necessary scripts
+
+[Download the project as ZIP](https://github.com/L1am0/hugo-leaflet/archive/master.zip)
 
 ### [RECOMENDED] Load Scripts from CDN
 
@@ -9,7 +14,7 @@ OpenStreetMap Hugo Shortcodes
 2) Call the load shortcut in every post or globally in the theme
 `{{< load-leaflet >}}`
 
-###Load Scripts locally
+### Load Scripts locally
 
 1) Copy the _layouts_ folder over (containing the shortcuts)
 2) Copy the _static_ folder (js & css)
@@ -20,10 +25,12 @@ OpenStreetMap Hugo Shortcodes
 
 ### Map only
 
-*Shortcut*
-`{{< leaflet-simple-marker mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]">}}`
+**Shortcut**
 
-*Parameters*
+`{{< leaflet-simple mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]">}}`
+
+**Parameters**
+
 * MAPHEIGHT = px | %
 * MAPWIDTH = px (must be pixels! Otherwise the map will not be shown)
 * MAPLON = longitude where to center the map
@@ -34,10 +41,12 @@ OpenStreetMap Hugo Shortcodes
 
 #### Marker _without_ Popup
 
-*Shortcut*
-`{{< leaflet-simple-marker mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]" markerLon="[MARKERLON]" markerLat="[MARKERLAT]">}}`
+**Shortcut**
 
-*Parameters*
+`{{< leaflet-simple mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]" markerLon="[MARKERLON]" markerLat="[MARKERLAT]">}}`
+
+**Parameters**
+
 * MAPHEIGHT = px | %
 * MAPWIDTH = px (must be pixels! Otherwise the map will not be shown)
 * MAPLON = longitude where to center the map
@@ -47,10 +56,12 @@ OpenStreetMap Hugo Shortcodes
 
 #### Marker _with_ Popup
 
-*Shortcut*
-`{{< leaflet-simple-marker mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]" markerLon="[MARKERLON]" markerLat="[MARKERLAT]" markerContent="[MARKERCONTENT]">}}`
+**Shortcut**
 
-*Parameters*
+`{{< leaflet-simple mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]" markerLon="[MARKERLON]" markerLat="[MARKERLAT]" markerContent="[MARKERCONTENT]">}}`
+
+**Parameters**
+
 * MAPHEIGHT = px | %
 * MAPWIDTH = px (must be pixels! Otherwise the map will not be shown)
 * MAPLON = longitude where to center the map
@@ -59,5 +70,14 @@ OpenStreetMap Hugo Shortcodes
 * MARKERLAT = latitude where to place the marker
 * MARKERCONTENT = Content that should be displayed in marker popup (Can be HTML)
 
-##License
+## Donate
+
+**If you like my work please support me! With your support I can go on improving the current shortcuts and add new ones**
+
+**[BUY ME A MATE TEA](http://l1am0.eu/donate.php)**
+
+## License
 GPL v2
+
+---
+Open Street Map, Hugo, HugoCMS, Leaflet, Maps, Hugo Maps Plugin, Shortcut, OSM, Osmand
