@@ -4,6 +4,10 @@ Shortcodes for inserting a OSM (Open Street Maps) Map into your posts.
 
 _You can use as much Maps in a single post as you like! (You only have to load the script once)_
 
+Please consider donating if you like my work :D
+
+**[BUY ME A MATE TEA](http://l1am0.eu/donate.php)**
+
 ## Installation/Loading necessary scripts
 
 [Download the project as ZIP](https://github.com/L1am0/hugo-leaflet/archive/master.zip)
