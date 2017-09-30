@@ -19,6 +19,7 @@ Please consider donating if you like my work :D
 `{{< load-leaflet >}}`
 
 ### Load Scripts locally
+**Only with "Map only" working**
 
 1) Copy the _layouts_ folder over (containing the shortcuts)
 2) Copy the _static_ folder (js & css)
