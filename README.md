@@ -1,6 +1,6 @@
 # Hugo Leaflet
 
-Shortcodes for inserting a OSM (Open Street Maps) Map into your posts. 
+Shortcodes for inserting a OSM (Open Street Maps) Map into your posts by using leaflet.
 
 _You can use as much Maps in a single post as you like! (You only have to load the script once)_
 
