@@ -1,0 +1,25 @@
+{{ if .IsNamedParams }}
+	<!--Container-->
+	<div id="mapid{{.Get "mapLon" }}" style="witdh:{{.Get "mapWidth" }};height:{{.Get "mapHeight" }};"></div>
+
+	<!--Populate with marker--> 
+	<script>
+		//Create Map
+			var mymap = L.map('mapid{{.Get "mapLon" }}').setView([{{.Get "mapLat" }}, {{.Get "mapLon" }}], 13);
+		//Add tiles
+			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap);
+		//Simple Marker
+			{{ if and (.Get "markerLat") (.Get "markerLon") }}
+				var marker = L.marker([{{.Get "markerLat" }}, {{.Get "markerLon" }}]).addTo(mymap);
+			{{ end }}
+			{{ if .Get "markerContent" }}
+				marker.bindPopup("{{.Get "markerContent" }}");			
+			{{ end }}
+
+	</script>
+{{ else }}
+<hr>
+<h1>Leaflet Simple Marker</h1>
+<h2>Please provide named Paramters</h2>
+<hr>
+{{ end }}.
