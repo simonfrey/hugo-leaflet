@@ -4,9 +4,14 @@ Shortcodes for inserting a OSM (Open Street Maps) Map into your posts by using l
 
 _You can use as much Maps in a single post as you like! (You only have to load the script once)_
 
-Please consider donating if you like my work :D
 
-**[BUY ME A MATE TEA](http://l1am0.eu/donate.php)**
+---
+
+Help me to grow this project:
+
+[![Donate Button](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/l1am0)
+
+---
 
 ## Installation/Loading necessary scripts
 
