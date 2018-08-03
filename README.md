@@ -37,7 +37,7 @@ Help me to grow this project:
 
 **Shortcut**
 
-`{{< leaflet-simple mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]">}}`
+`{{< leaflet-simple mapHeight="[MAPHEIGHT]" mapWidth="[MAPWIDTH]" mapLon="[MAPLON]" mapLat="[MAPLAT]" zoom="[ZOOM]">}}`
 
 **Parameters**
 
@@ -45,6 +45,7 @@ Help me to grow this project:
 * MAPWIDTH = px (must be pixels! Otherwise the map will not be shown)
 * MAPLON = longitude where to center the map
 * MAPLAT = latitude where to center the map
+* ZOOM = the zoom level. This attribute is optional, default zoom level is 13. If set, it must be parsable as int.
 
 ### Map with one marker
 
