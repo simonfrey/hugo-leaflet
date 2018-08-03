@@ -4,8 +4,10 @@
 
 	<!--Populate with marker--> 
 	<script>
+		//Define zoom level with default if not defined
+		let zoom = {{ if .Get "zoom" }}{{ int (.Get "zoom") }}{{ else }}13{{ end }};
 		//Create Map
-			var mymap = L.map('mapid{{.Get "mapLon" }}').setView([{{.Get "mapLat" }}, {{.Get "mapLon" }}], 13);
+			var mymap = L.map('mapid{{.Get "mapLon" }}').setView([{{.Get "mapLat" }}, {{.Get "mapLon" }}], zoom);
 		//Add tiles
 			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap);
 		//Simple Marker
@@ -22,4 +24,3 @@
 <h1>Leaflet Simple Marker</h1>
 <h2>Please provide named Paramters</h2>
 <hr>
-{{ end }}
