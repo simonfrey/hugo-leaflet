@@ -9,7 +9,9 @@
 		//Create Map
 			var mymap = L.map('mapid{{.Get "mapLon" }}').setView([{{.Get "mapLat" }}, {{.Get "mapLon" }}], zoom);
 		//Add tiles
-			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(mymap);
+			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(mymap);
 		//Simple Marker
 			{{ if and (.Get "markerLat") (.Get "markerLon") }}
 				var marker = L.marker([{{.Get "markerLat" }}, {{.Get "markerLon" }}]).addTo(mymap);
